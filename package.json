@@ -30,16 +30,25 @@
     "stylus-brunch": "*"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-polyfill": "*",
+    "classnames": "^2.2.5",
+    "mongoose": "^5.0.10",
     "prop-types": "*",
     "react": "*",
-    "react-dom": "*",
+    "react-bootstrap": "^0.32.1",
+    "react-chat-widget": "^2.1.2",
+    "react-dom": "^16.2.0",
     "react-redux": "*",
-    "redux": "*"
+    "react-youtube": "^7.5.0",
+    "redux": "*",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4"
   },
   "scripts": {
     "build": "brunch build",
-    "start": "brunch watch --server",
+    "start:brunch": "brunch watch --server",
+    "start:node": "nodemon server/index.js",
     "save-deps": "rm -rf node_modules && npm update --save && npm update --save-dev",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",

@@ -1,0 +1,30 @@
+#chat
+	h1
+		font-size: 4em
+		margin: .5em
+
+	#messages-list
+		font-family: sans-serif
+		margin: auto
+		height: 20em
+		border: .1em solid #213291
+		width: 50%
+		overflow: auto
+
+		.messages
+			font-size: 1.2em
+			margin: .3em
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			.msg
+				background-color: #213291
+				color: #abb9c4
+				padding: .2em
+				border-radius: .5em
+		.own
+			text-align: left
+			align-items: flex-start
+			.msg
+				background-color: #abb9c4
+				color: #213291

@@ -10,7 +10,7 @@ import { createStore, compose, applyMiddleware } from 'redux';
 import reducer from 'src/store/reducer';
 
 // Middleware
-import exampleMiddleware from './exampleMiddleware';
+import socket from './socket';
 
 /*
  * Code
@@ -22,8 +22,8 @@ if (window.devToolsExtension) {
 }
 
 // Middleware vers Enhancers
-const exampleEnhancer = applyMiddleware(exampleMiddleware);
-const enhancers = compose(exampleEnhancer, ...devTools);
+const socketEnhancer = applyMiddleware(socket);
+const enhancers = compose(socketEnhancer, ...devTools);
 
 // createStore
 const store = createStore(reducer, enhancers);
